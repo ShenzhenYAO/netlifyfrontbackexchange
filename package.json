@@ -16,5 +16,7 @@
     "url": "https://github.com/ShenzhenYAO/netlifyfrontbackexchange/issues"
   },
   "homepage": "https://github.com/ShenzhenYAO/netlifyfrontbackexchange#readme",
-  "dependencies": {}
+  "dependencies": {
+    "mongodb": "^3.6.5"
+  }
 }
