@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ShenzhenYAO/netlifyfrontbackexchange/issues"
   },
-  "homepage": "https://github.com/ShenzhenYAO/netlifyfrontbackexchange#readme"
+  "homepage": "https://github.com/ShenzhenYAO/netlifyfrontbackexchange#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0"
+  }
 }
