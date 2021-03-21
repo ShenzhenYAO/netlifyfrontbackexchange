@@ -3,7 +3,8 @@
 
     // send data to back end
     let sendstr= "This is a string from the frontend.";
-    let urlto = '/.netlify/functions/backend';
+    let urlto = 'https://frontback.netlify.app/.netlify/functions/backend';
+    // let urlto = '/.netlify/functions/backend';
     $.ajax({
         url: urlto,
         type: 'POST',
@@ -15,8 +16,8 @@
     });
 
     // read data from back end
-    const tries =0 
-    let urlfrom = '/.netlify/functions/backend';
+    const tries = 0 
+    let urlfrom = 'https://frontback.netlify.app/.netlify/functions/backend';
     getbackend(tries, urlfrom);
 
     async function getbackend (url){
@@ -40,6 +41,15 @@
             }            
         })
         .done(d=>{
+            if (d.includes('frontendapps/frontend.js')){
+                tries++
+                console.log('wrong page, try again ===' + tries)
+                if (tries < 10) {
+                    setTimeout(async function (){
+                        await getbackend(tries, url)
+                    }, 1000)
+                } 
+            }
             console.log('received from backend \n', d)
             d3.select('body').append('h2').text(d)
         })
