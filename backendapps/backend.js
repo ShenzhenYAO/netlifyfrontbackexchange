@@ -3,7 +3,8 @@ const qs = require('querystring');
 
 exports.handler = async (event, context) => { 
 
-    const { strfromfront } = qs.parse(event.body);    
+    const { strfromfront } = qs.parse(event.body); 
+    
     // console.log("the string from frontend:", strfromfront)
 
     // const v2 = qs.parse(event.body);
@@ -21,10 +22,16 @@ exports.handler = async (event, context) => {
     //     body: strFromBackToFront,
     //   };
 
+    // isn't it just like that????
+    let thejson = event.body
+    let thejsonstr = JSON.stringify(thejson)
+    let strFromBackToFront = "The string from frontend {" 
+        + thejsonstr + "} was received. This message was from the backend";
+
     // return lambdaResponse
     return {
         statusCode: 200,
-        body: JSON.stringify(event) 
+        body: strFromBackToFront 
       };
 
 }

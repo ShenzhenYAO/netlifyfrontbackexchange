@@ -12,6 +12,7 @@
         data: JSON.stringify(datajson),
         success: function (res) {
             console.log('data sent from front end', res)
+            d3.select('body').append('p').text(res)
         }
     });
 

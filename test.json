@@ -1,0 +1,136 @@
+{
+    "path": "/.netlify/functions/backend",
+    "httpMethod": "POST",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "br, gzip",
+        "accept-language": "en-US,en;q=0.9",
+        "cache-control": "no-cache",
+        "client-ip": "174.2.65.76",
+        "content-length": "45",
+        "content-type": "application/json",
+        "dnt": "1",
+        "host": "frontback.netlify.app",
+        "origin": "https://frontback.netlify.app",
+        "pragma": "no-cache",
+        "referer": "https://frontback.netlify.app/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+        "via": "https/2 Netlify[c6f2ac85-fc96-4d8a-a198-39664989b7b3] (Netlify Edge Server)",
+        "x-bb-ab": "0.946810",
+        "x-bb-client-request-uuid": "c6f2ac85-fc96-4d8a-a198-39664989b7b3-84874279",
+        "x-bb-ip": "174.2.65.76",
+        "x-bb-loop": "1",
+        "x-country": "CA",
+        "x-forwarded-for": "174.2.65.76",
+        "x-forwarded-proto": "https",
+        "x-language": "en,en;q=0.9",
+        "x-nf-cache-gen": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9Cg.eyJnZW4iOiI2MDU3YjMyMWFjY2I2NTAwMDg2ZTljMjQ6MTYxNjM2MDI0NjUxMSJ9Cg.8nUHKTDuhdJ9RIKuga7j_gvWoIN3ZyvpHZLAcc49gSo",
+        "x-nf-client-connection-ip": "174.2.65.76",
+        "x-nf-request-id": "c6f2ac85-fc96-4d8a-a198-39664989b7b3-84874279",
+        "x-requested-with": "XMLHttpRequest"
+    },
+    "multiValueHeaders": {
+        "Accept": [
+            "*/*"
+        ],
+        "Accept-Encoding": [
+            "br, gzip"
+        ],
+        "Accept-Language": [
+            "en-US,en;q=0.9"
+        ],
+        "Cache-Control": [
+            "no-cache"
+        ],
+        "Client-Ip": [
+            "174.2.65.76"
+        ],
+        "Content-Length": [
+            "45"
+        ],
+        "Content-Type": [
+            "application/json"
+        ],
+        "Dnt": [
+            "1"
+        ],
+        "Origin": [
+            "https://frontback.netlify.app"
+        ],
+        "Pragma": [
+            "no-cache"
+        ],
+        "Referer": [
+            "https://frontback.netlify.app/"
+        ],
+        "Sec-Ch-Ua": [
+            "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+        ],
+        "Sec-Ch-Ua-Mobile": [
+            "?0"
+        ],
+        "Sec-Fetch-Dest": [
+            "empty"
+        ],
+        "Sec-Fetch-Mode": [
+            "cors"
+        ],
+        "Sec-Fetch-Site": [
+            "same-origin"
+        ],
+        "User-Agent": [
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+        ],
+        "Via": [
+            "https/2 Netlify[c6f2ac85-fc96-4d8a-a198-39664989b7b3] (Netlify Edge Server)"
+        ],
+        "X-Bb-Ab": [
+            "0.946810"
+        ],
+        "X-Bb-Client-Request-Uuid": [
+            "c6f2ac85-fc96-4d8a-a198-39664989b7b3-84874279"
+        ],
+        "X-Bb-Ip": [
+            "174.2.65.76"
+        ],
+        "X-Bb-Loop": [
+            "1"
+        ],
+        "X-Country": [
+            "CA"
+        ],
+        "X-Forwarded-For": [
+            "174.2.65.76"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ],
+        "X-Language": [
+            "en,en;q=0.9"
+        ],
+        "X-Nf-Cache-Gen": [
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9Cg.eyJnZW4iOiI2MDU3YjMyMWFjY2I2NTAwMDg2ZTljMjQ6MTYxNjM2MDI0NjUxMSJ9Cg.8nUHKTDuhdJ9RIKuga7j_gvWoIN3ZyvpHZLAcc49gSo"
+        ],
+        "X-Nf-Client-Connection-Ip": [
+            "174.2.65.76"
+        ],
+        "X-Nf-Request-Id": [
+            "c6f2ac85-fc96-4d8a-a198-39664989b7b3-84874279"
+        ],
+        "X-Requested-With": [
+            "XMLHttpRequest"
+        ],
+        "host": [
+            "frontback.netlify.app"
+        ]
+    },
+    "queryStringParameters": {},
+    "multiValueQueryStringParameters": {},
+    "body": "{\"str\":\"This is a string from the frontend.\"}",
+    "isBase64Encoded": false
+}
