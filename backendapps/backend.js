@@ -32,10 +32,16 @@ exports.handler = async (event, context, callback) => {
                 const collection = client.db(dbName).collection(collectionName);
                 collection.insertOne(resolveddata, function (err, res) {
                     if (err) throw err;
+                    resolve(res)
                 });
             })// client.connect()
         }//resolve
     ) // new promise1;
+
+    const resolved = await newpromise.then(d => {
+        // console.log(d)
+        return d
+      })
 
 
     // return lambdaResponse
