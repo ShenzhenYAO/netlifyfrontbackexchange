@@ -6,7 +6,12 @@ exports.handler = async (event, context) => {
     const { strfromfront } = qs.parse(event.body);    
     console.log("the string from frontend:", strfromfront)
 
-    const strFromBackToFront = "The string from frontend '" + JSON.stringify({strfromfront}) + "' was received. This message was from the backend";
+    const v2 = qs.parse(event.body);
+    const v3 = JSON.stringify(v2)
+
+    const strFromBackToFront = "The string from frontend '" 
+        + strfromfront + v2 + v3 
+        + JSON.stringify({strfromfront}) + "' was received. This message was from the backend";
 
     // const lambdaResponse = {
     //     statusCode: 200,
