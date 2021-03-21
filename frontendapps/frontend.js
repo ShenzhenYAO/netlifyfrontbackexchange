@@ -3,7 +3,7 @@
 
     // send data to back end
     let sendstr= "This is a string from the frontend.";
-    let urlto = 'https://frontback.netlify.app/.netlify/functions/backend';
+    let urlto = '/.netlify/functions/backend';
     // let urlto = '/.netlify/functions/backend';
     $.ajax({
         url: urlto,
@@ -17,7 +17,7 @@
 
     // read data from back end
     const tries = 0 
-    let urlfrom = 'https://frontback.netlify.app/.netlify/functions/backend';
+    let urlfrom = '/.netlify/functions/backend';
     getbackend(tries, urlfrom);
 
     async function getbackend (url){
