@@ -3,7 +3,7 @@
 
     // send data to back end
     let sendstr= "This is a string from the frontend.";
-    let urlto = __dirname + '/.netlify/functions/backend';
+    let urlto = '/.netlify/functions/backend';
     $.ajax({
         url: urlto,
         type: 'POST',
