@@ -16,7 +16,7 @@
 
     // read data from back end
     const tries =0 
-    let urlfrom = __dirname + '/.netlify/functions/backend';
+    let urlfrom = '/.netlify/functions/backend';
     getbackend(tries, urlfrom);
 
     async function getbackend (url){
