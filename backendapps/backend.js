@@ -38,7 +38,7 @@ exports.handler = async (event, context, callback) => {
         }//resolve
     ) // new promise1;
 
-    const resolved = await newpromise.then(d => {
+    const resolved = await newpromise1.then(d => {
         // console.log(d)
         return d
       })
