@@ -1,7 +1,7 @@
 // to parse the string from frontend
 const qs = require('querystring');
 
-module.handler = async (event, context) => { 
+exports.handler = async (event, context) => { 
 
     const { strfromfront } = qs.parse(event.body);    
     console.log("the string from frontend:", strfromfront)
